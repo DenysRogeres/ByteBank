@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\ByteBank\\ByBank.csproj",
-      "projectName": "ByBank",
-      "projectPath": "C:\\dev\\ByteBank\\ByBank.csproj",
+      "projectUniqueName": "C:\\dev\\ByteBank\\ByteBank.csproj",
+      "projectName": "ByteBank",
+      "projectPath": "C:\\dev\\ByteBank\\ByteBank.csproj",
       "packagesPath": "C:\\Users\\denys\\.nuget\\packages\\",
       "outputPath": "C:\\dev\\ByteBank\\obj\\",
       "projectStyle": "PackageReference",

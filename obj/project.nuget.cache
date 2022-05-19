@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m88vTU9cWVeQhBs4I+UawW8aWTgwBEzQ15PAUrwgnhWEGCRqGGRpzGF0plikh1WgoGf+HfXYvE+puiuB/pCkVw==",
+  "dgSpecHash": "oYjzSD7SAAeUvDt2YUj2gCRGUZMm8/IzmGQlFgQYgjk8HjE8336BvXtAP/xL3cCz/nlmqj9zyjSmVFlxekfcZA==",
   "success": true,
-  "projectFilePath": "C:\\dev\\ByteBank\\ByBank.csproj",
+  "projectFilePath": "C:\\dev\\ByteBank\\ByteBank.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

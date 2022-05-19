@@ -1,8 +1,8 @@
-﻿namespace ByBank
+﻿namespace ByteBank
 {
     public class ContaCorrente
     {
-        public string nome;
+        public Pessoa titular;
         public int numero;
         public int agencia;
         public double saldo;

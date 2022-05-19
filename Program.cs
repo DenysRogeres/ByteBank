@@ -1,34 +1,26 @@
 ﻿using System;
 
-namespace ByBank
+namespace ByteBank
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             ContaCorrente contaDenys = new ContaCorrente();
-            ContaCorrente contaRayssa = new ContaCorrente();
+            contaDenys.titular = new Pessoa();
 
-            contaDenys.nome = "Denys";
-            contaDenys.saldo = 500;
+            contaDenys.titular.nome = "Denys";
+            contaDenys.titular.cpf = "123.456.789-09";
+            contaDenys.titular.telefone = "(61)9999-8888";
+            contaDenys.numero = 123456;
+            contaDenys.agencia = 25;
+            contaDenys.saldo = 2400;
 
-            contaRayssa.nome = "Rayssa";
-            contaRayssa.saldo = 100;
-
-            Console.WriteLine("Conta Denys " + contaDenys.saldo);
-            Console.WriteLine("Conta Rayssa " + contaRayssa.saldo);
-
-            bool resultadoTransferencia = contaDenys.Transferir(2000, contaRayssa);
-
-            Console.WriteLine("Conta Denys " + contaDenys.saldo);
-            Console.WriteLine("Conta Rayssa " + contaRayssa.saldo);
+            Console.WriteLine(contaDenys.saldo);
+            Console.WriteLine(contaDenys.titular.nome);
 
 
-            if (resultadoTransferencia == true)
-                Console.WriteLine("Transferência realizada!");
-            else
-                Console.WriteLine("Transferência não realizada!");
-           
+
             Console.ReadLine();
         }
     }
