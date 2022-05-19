@@ -7,18 +7,17 @@ namespace ByteBank
         static void Main(string[] args)
         {
             ContaCorrente contaDenys = new ContaCorrente();
-            contaDenys.titular = new Cliente();
+            Cliente cliente = new Cliente();
 
-            contaDenys.titular.nome = "Denys";
-            contaDenys.titular.cpf = "123.456.789-09";
-            contaDenys.titular.telefone = "(61)9999-8888";
-            contaDenys.numero = 123456;
-            contaDenys.agencia = 25;
+            cliente.Nome = "Denys";
+            cliente.CPF = "123.456.789-21";
+            cliente.Telefone = "(61)999888";
 
-            contaDenys.DefinirSaldo(500);
-            Console.WriteLine(contaDenys.ObterSaldo());
-            Console.WriteLine(contaDenys.titular.nome);
+            contaDenys.Titular = cliente;
+            contaDenys.Saldo = 50;
 
+            Console.WriteLine(contaDenys.Titular.Nome);
+            Console.WriteLine(contaDenys.Saldo);
 
 
             Console.ReadLine();

@@ -2,49 +2,52 @@
 {
     public class ContaCorrente
     {
-        public Cliente titular;
-        public int numero;
-        public int agencia;
-        private double saldo;
+        public Cliente Titular { get; set; }
+        public int Numero { get; set; }
+        public int Agenda { get; set; }
+        private double _saldo;
 
-        public double ObterSaldo()
+        public double Saldo
         {
-            return this.saldo;
-        }
-
-        public void DefinirSaldo(double saldo)
-        {
-            if(saldo < 0)
-            {
-                return;
+            get 
+            { 
+                return _saldo; 
             }
-            this.saldo = saldo;
+            set
+            {
+                if (value < 0)
+                {
+                    return;
+                }
+                _saldo = value;
+            }
+
         }
 
         public bool Sacar(double valor)
         {
-            if (this.saldo < valor)
+            if (_saldo < valor)
                 return false;
             else
             {
-                this.saldo -= valor;
+                _saldo -= valor;
                 return true;
             }
         }
 
         public void Depositar(double valor)
         {
-            this.saldo += valor;
+            _saldo += valor;
         }
 
         public bool Transferir(double valor, ContaCorrente contaCorrente)
         {
-            if (this.saldo < valor)
+            if (_saldo < valor)
                 return false;
             else
             {
-                this.saldo -= valor;
-                contaCorrente.saldo += valor;
+                _saldo -= valor;
+                contaCorrente._saldo += valor;
 
                 return true;
             }
