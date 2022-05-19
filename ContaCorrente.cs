@@ -2,10 +2,24 @@
 {
     public class ContaCorrente
     {
-        public Pessoa titular;
+        public Cliente titular;
         public int numero;
         public int agencia;
-        public double saldo;
+        private double saldo;
+
+        public double ObterSaldo()
+        {
+            return this.saldo;
+        }
+
+        public void DefinirSaldo(double saldo)
+        {
+            if(saldo < 0)
+            {
+                return;
+            }
+            this.saldo = saldo;
+        }
 
         public bool Sacar(double valor)
         {
